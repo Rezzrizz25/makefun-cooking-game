@@ -1,0 +1,32 @@
+/* Sizzle & Serve — page chrome around the game canvas. */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #2b1503;
+  min-height: 100%;
+}
+#stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 12px;
+}
+#game {
+  width: min(1280px, 98vw);
+  height: auto;
+  display: block;
+  border: 4px solid #5d2f16;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+  background: #e8c9a0;
+  cursor: pointer;
+}
+#fallback {
+  color: #f3e2c7;
+  font: 14px "Trebuchet MS", Verdana, sans-serif;
+  text-align: center;
+  margin: 10px 0 0;
+}
